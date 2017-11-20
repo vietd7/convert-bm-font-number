@@ -1,0 +1,10 @@
+.number-wrap {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+
+  .number-item {
+    height: 100%;
+    display: inline-block;
+  }
+}

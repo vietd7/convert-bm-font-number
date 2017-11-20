@@ -10,10 +10,11 @@ class Test extends React.Component {
   render() {
 
     return (<div>
-      <BitmapFontNumber textTest={this.props.textTest}/>
+      <BitmapFontNumber number={1234567890} numberUrl="url(images/number.png)" deltaHeight={65} deltaWidth={29} numberDistance={64}
+        numberFormat={true}
+    />
     </div>)
   }
 }
-const mapStatetoProps = (state, ownprops) => ({textTest: state.utils.test});
 
-export default connect(mapStatetoProps)(Test);
+export default Test;
