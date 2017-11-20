@@ -7,27 +7,22 @@ import {combineReducers, createStore, compose, applyMiddleware} from "redux";
 //reducers
 import utils from "./utils"
 
-import {routerForBrowser} from "redux-little-router";
+// import {routerForBrowser} from "redux-little-router";
 
-const routes = {
-    "/": {
-        title: "CashOut"
-    },
-    "/#profile": {
-        title: "PROFILE"
-    },
-    "/#bank": {
-        title: "BANK"
-    }
-}
+const routes = {}
 
-const router = routerForBrowser({routes, basename: '/cashout-cplus'});
+// const router = routerForBrowser({routes});
 
-const reducer = combineReducers({ utils, router: router.reducer});
+const reducer = combineReducers({
+  utils
+  // , router: router.reducer
+});
 
-const store = createStore(reducer, {}, compose(router.enhancer, applyMiddleware(
+const store = createStore(reducer
+//   , {}, compose(router.enhancer, applyMiddleware(
 // utilsHandler,
-router.middleware)));
+// router.middleware))
+);
 
 window.store = store;
 

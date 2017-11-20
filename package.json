@@ -1,19 +1,21 @@
 {
-  "name": "project-clone",
+  "name": "convert-bm-font-number",
   "version": "1.0.0",
-  "description": "project-clone",
+  "description": "convert bitmap font number to images",
   "scripts": {
     "test": "webpack-dev-server -d --config=./build/conf/webpack.config.js --hot",
     "build:prod": "webpack -p --config=./build/conf/webpack.config.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vietd7/project-reactjs-clone.git"
+    "url": "https://github.com/vietd7/convert-bm-font-number.git"
   },
   "keywords": [
     "node.js",
     "reactjs",
-    "helloworld"
+    "bitmap font",
+    "convert",
+    "number"
   ],
   "author": "AnhTV",
   "license": "ISC",
@@ -31,13 +33,9 @@
     "nhb-popup-manager": "^3.0.17",
     "node-sass": "^4.5.3",
     "react": "^15.6.1",
-    "react-addons-update": "^15.6.0",
-    "react-clipboard.js": "^1.1.2",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",
     "redux": "^3.7.2",
-    "redux-little-router": "^14.2.0",
-    "redux-simple-websocket": "^1.0.3",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
     "webpack": "^2.6.1"
